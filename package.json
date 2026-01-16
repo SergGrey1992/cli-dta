@@ -1,0 +1,17 @@
+{
+  "name": "create-dta-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "update-versions": "pnpm --filter @dta/create-app update-versions",
+    "show-versions": "pnpm --filter @dta/create-app show-versions"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
