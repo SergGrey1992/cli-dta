@@ -4,7 +4,7 @@
   "author": "SergGrey1992",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SergGrey1992/cli-dta.git",
+    "url": "git+https://github.com/SergGrey1992/cli-dta.git",
     "directory": "packages/create-dta"
   },
   "bugs": {
@@ -28,13 +28,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "update-versions": "pnpm --filter @dta/create-app update-versions",
-    "show-versions": "pnpm --filter @dta/create-app show-versions"
+    "update-versions": "pnpm --filter @dta-cli/create-template-app update-versions",
+    "show-versions": "pnpm --filter @dta-cli/create-template-app show-versions"
   },
   "devDependencies": {
     "turbo": "^2.3.3",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "pnpm@9.15.0",
+  "version": ""
 }

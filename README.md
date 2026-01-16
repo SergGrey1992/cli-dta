@@ -4,12 +4,12 @@ CLI для создания DTA проектов на базе Turborepo.
 
 ## Использование
 ```bash
-npx @dta/create-app my-project
+npx @dta-cli/create-app my-project
 ```
 
 ## Опции
 ```bash
-npx @dta/create-app my-project \
+npx @dta-cli/create-app my-project \
   --base=with-tailwind \
   --template=rbac+feature-flags \
   --package-manager=pnpm

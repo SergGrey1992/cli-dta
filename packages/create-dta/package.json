@@ -1,5 +1,5 @@
 {
-  "name": "@dta/create-app",
+  "name": "@dta-cli/create-template-app",
   "version": "1.0.0",
   "description": "Create TDA projects with Turborepo",
   "type": "module",
