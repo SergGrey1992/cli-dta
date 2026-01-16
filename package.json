@@ -1,6 +1,29 @@
 {
   "name": "create-dta-monorepo",
   "private": true,
+  "author": "SergGrey1992",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SergGrey1992/cli-dta.git",
+    "directory": "packages/create-dta"
+  },
+  "bugs": {
+    "url": "https://github.com/SergGrey1992/cli-dta/issues"
+  },
+  "homepage": "https://github.com/SergGrey1992/cli-dta#readme",
+  "keywords": [
+    "turborepo",
+    "monorepo",
+    "cli",
+    "template",
+    "dta",
+    "nextjs",
+    "typescript"
+  ],
+  "files": [
+    "dist",
+    "templates"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
