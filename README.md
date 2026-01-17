@@ -1,25 +1,92 @@
-# create-dta
+# @serggrey1992/create-app
 
-CLI для создания DTA проектов на базе Turborepo.
+CLI для создания DTA проектов на базе Turborepo с поддержкой современного стека технологий.
 
-## Использование
+## Быстрый старт
 ```bash
-npx @dta-cli/create-app my-project
+npx @serggrey1992/create-app my-project
 ```
 
-## Опции
+## Использование
+
+### Базовая команда
 ```bash
-npx @dta-cli/create-app my-project \
+npx @serggrey1992/create-app my-project
+```
+
+### С опциями
+```bash
+npx @serggrey1992/create-app my-project \
   --base=with-tailwind \
   --template=rbac+feature-flags \
   --package-manager=pnpm
 ```
 
-## Фичи
+## Опции
 
-- `rbac` - Role-Based Access Control
-- `feature-flags` - Feature Flags система
+### `--base`
+Выбор базового шаблона:
+- `default` - базовая конфигурация
+- `with-tailwind` - с настроенным Tailwind CSS
 
-## Документация
+### `--template`
+Дополнительные функции (можно комбинировать через `+`):
+- `rbac` - Role-Based Access Control система
+- `feature-flags` - Feature Flags для управления функциональностью
+- `rbac+feature-flags` - обе функции вместе
 
-[GitHub](https://github.com/SergGrey1992/cli-dta)
+### `--package-manager`
+Выбор пакетного менеджера:
+- `pnpm` (рекомендуется)
+- `npm`
+- `yarn`
+
+## Что входит
+
+- ⚡️ **Turborepo** - высокопроизводительная монорепо система
+- 🎨 **Tailwind CSS** - утилитарный CSS фреймворк (опционально)
+- 🔐 **RBAC** - система управления доступом на основе ролей (опционально)
+- 🚩 **Feature Flags** - управление функциональностью (опционально)
+- 📦 **TypeScript** - типизация из коробки
+- 🔧 **Next.js 14+** - современный React фреймворк
+
+## Примеры
+
+### Минимальный проект
+```bash
+npx @serggrey1992/create-app my-app
+```
+
+### Проект с Tailwind
+```bash
+npx @serggrey1992/create-app my-app --base=with-tailwind
+```
+
+### Полнофункциональный проект
+```bash
+npx @serggrey1992/create-app my-app \
+  --base=with-tailwind \
+  --template=rbac+feature-flags \
+  --package-manager=pnpm
+```
+
+## После создания
+```bash
+cd my-project
+pnpm install  # или npm install / yarn install
+pnpm dev      # запуск в режиме разработки
+```
+
+## Ссылки
+
+- [GitHub](https://github.com/SergGrey1992/cli-dta)
+- [npm](https://www.npmjs.com/package/@serggrey1992/create-app)
+- [Issues](https://github.com/SergGrey1992/cli-dta/issues)
+
+## Автор
+
+[SergGrey1992](https://github.com/SergGrey1992)
+
+## Лицензия
+
+MIT

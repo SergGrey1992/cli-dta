@@ -1,11 +1,14 @@
 {
-  "name": "@dta-cli/create-app",
+  "name": "@serggrey1992/create-app",
   "private": false,
   "author": "SergGrey1992",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SergGrey1992/cli-dta.git",
     "directory": "packages/create-dta"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bugs": {
     "url": "https://github.com/SergGrey1992/cli-dta/issues"
